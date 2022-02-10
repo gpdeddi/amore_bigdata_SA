@@ -1,0 +1,785 @@
+[2022-02-04 15:06:43][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210625 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 663213c6-3121-4bf0-85b9-a6a8752e866f
+
+[2022-02-04 15:06:44][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210626 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b6054f8e-3fbf-425b-a74d-fa0946f2c2ec
+
+[2022-02-04 15:06:45][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210627 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 64c22b46-3aca-4cd7-8a6d-af0e450c6ef4
+
+[2022-02-04 15:06:46][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210628 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: ab42772e-0f64-4201-b4d5-8ed653e4128e
+
+[2022-02-04 15:06:47][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210629 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 3ca70804-715d-41ac-a015-ca4e92d0cb3e
+
+[2022-02-04 15:06:47][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210630 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9a05acfa-b106-431f-8a8f-e27b1c21953c
+
+[2022-02-04 15:06:48][ERROR][selectQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 41 "return results.to_dataframe()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210630 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 7690739e-28b1-4d2a-97cb-79b5346a91cd
+
+[2022-02-07 09:12:04][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 404 Not found: Table ap-bq-mart:AP_Bigdata_Dashboard.SAData_Total_ was not found in location asia-northeast3
+
+Location: asia-northeast3
+Job ID: 865cad94-d771-4b53-91db-c3cb34d86b22
+
+[2022-02-07 09:14:57][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 No matching signature for operator = for argument types: STRING, ARRAY<STRING>. Supported signature: ANY = ANY at [3:47]
+
+Location: asia-northeast3
+Job ID: 6c3447df-f290-4174-8724-8be47530bd27
+
+[2022-02-07 09:15:03][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 No matching signature for operator = for argument types: STRING, ARRAY<STRING>. Supported signature: ANY = ANY at [3:47]
+
+Location: asia-northeast3
+Job ID: 555f4222-b878-4353-9070-e6a3c7e74857
+
+[2022-02-07 15:37:21][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Unclosed string literal at [3:60]
+
+Location: US
+Job ID: 743757ae-4a2d-443b-aa2f-9ff94854a43c
+
+[2022-02-07 15:37:28][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Unclosed string literal at [3:57]
+
+Location: US
+Job ID: c68474d4-67ab-4c30-8ab3-8b568e4d3e66
+
+[2022-02-08 14:18:55][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Expected ")" or "," but got identifier "s" at [3:80]
+
+Location: US
+Job ID: b92fc028-5efb-4164-98ea-72413f423c4a
+
+[2022-02-08 14:25:36][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Illegal input character "\354" at [3:67]
+
+Location: US
+Job ID: 273fab98-73c4-42bb-8055-52c09ab0a998
+
+[2022-02-08 15:09:40][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Illegal input character "\354" at [3:67]
+
+Location: US
+Job ID: 7bd20af5-93ac-4fe1-8e17-5e7624cb83a0
+
+[2022-02-08 15:09:45][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Illegal input character "\354" at [3:67]
+
+Location: US
+Job ID: 7bc9b0f1-cac4-4a6c-a7d4-6e6dd49dc2f8
+
+[2022-02-08 15:23:27][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Expected ")" or "," but got identifier "s" at [3:73]
+
+Location: US
+Job ID: 4cbc48e8-4205-49ed-8edd-f79448b4a2d5
+
+[2022-02-09 11:08:22][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: f5790bad-fcf3-41f8-b824-145784d6087c
+
+[2022-02-09 11:08:48][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 3a0cd710-f7df-450e-bc57-c58a25790424
+
+[2022-02-09 11:09:28][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a55c2a5e-07c9-40af-abc1-771743fbfbc7
+
+[2022-02-09 11:09:58][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 4718739f-4b2b-45d3-ab71-11f5d6a8f463
+
+[2022-02-09 11:21:12][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: ce99861e-47a0-494c-bb16-bc45311320f8
+
+[2022-02-09 11:21:14][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 335bc2d3-bf90-4c35-b269-737a36d231cd
+
+[2022-02-09 11:21:16][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 5aa1202f-2523-4733-85c4-8d29d6d0fdfc
+
+[2022-02-09 11:21:18][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 09c0971e-cc9c-403d-9a1b-aca2111ee12c
+
+[2022-02-09 11:21:19][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 28aac103-9c5d-4197-bfc5-10d9da8d4eee
+
+[2022-02-09 11:21:21][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 5ecdc98f-184b-44f0-a1bc-08ff3d781c40
+
+[2022-02-09 11:21:22][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e4882c19-d80d-4564-966c-c1d113c79848
+
+[2022-02-09 11:21:42][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: d6da2435-5d58-44e6-965f-7a9290abe50c
+
+[2022-02-09 11:21:43][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: aa499d6d-83d8-48ba-9f50-f411b44a39c9
+
+[2022-02-09 11:21:44][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: bc14bed0-25e6-488f-997c-e7a5da0e5534
+
+[2022-02-09 11:21:45][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: dc6573ec-168e-4d56-8aca-9bf6dc914e7a
+
+[2022-02-09 11:21:46][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 72692395-72ed-444b-a534-04f7a3312a7b
+
+[2022-02-09 11:21:47][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 0ef44932-443a-4fa6-867c-9c5994422761
+
+[2022-02-09 11:21:48][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: fe57576d-3a37-4800-af49-32c04097bd1e
+
+[2022-02-09 11:21:56][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: af3e982e-7493-4c9a-aa38-aa0474a0799a
+
+[2022-02-09 11:21:57][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: ff091fb9-e628-426b-9a8a-d27c8fd27c64
+
+[2022-02-09 11:21:59][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 30dd9c15-8d89-446b-a4bb-a8646d228a6c
+
+[2022-02-09 11:22:01][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 5888577c-4f66-49a1-931e-664e3a1c9b76
+
+[2022-02-09 11:22:03][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 79e500dc-985d-4aff-8d29-8b95bf41e8a7
+
+[2022-02-09 11:22:04][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: eb2a0b33-c498-407d-afbc-1c37adef6e69
+
+[2022-02-09 11:22:04][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e8cf6f9f-1cfb-4e51-8f1d-41686dfe9296
+
+[2022-02-09 11:22:12][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c7545cd2-fab3-4b4e-8ce0-6b3ddcc25e94
+
+[2022-02-09 11:22:13][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 8530eb3a-0f9e-4f4d-b53a-695667a31e17
+
+[2022-02-09 11:22:14][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b362e893-0134-4266-8679-3c9f6b1053f5
+
+[2022-02-09 11:22:15][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: eb6a3c00-ef27-4c71-af8a-e70dc70367b1
+
+[2022-02-09 11:22:16][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c8741445-fe72-4fe2-9de9-8789453e3db9
+
+[2022-02-09 11:22:17][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c1fee0cb-dc99-4934-85eb-2edf00af03e0
+
+[2022-02-09 11:22:18][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 0a12d17a-c5a5-4f4c-bb37-bef6acd7fd22
+
+[2022-02-09 11:22:37][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a983e7ce-65f5-4b6d-99f9-d38c2a2b997b
+
+[2022-02-09 11:22:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 139a18d2-c6c1-41a9-afd0-402103fb67f2
+
+[2022-02-09 11:22:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9ff90ecb-e504-4456-8143-c2566f4c60ed
+
+[2022-02-09 11:22:39][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: fd156325-5b2e-4e87-ad8e-f79c5c0f554c
+
+[2022-02-09 11:22:41][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: bdf7a2ee-5c18-46f8-9dc2-dee3027af966
+
+[2022-02-09 11:22:42][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 52eb33ca-1199-4253-aef9-ae7ecac584f5
+
+[2022-02-09 11:22:43][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 19e2c8e0-b184-4cdb-a71c-66d7c653b4f9
+
+[2022-02-09 11:26:18][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e08ae897-c18c-4c15-888c-e96409f04d85
+
+[2022-02-09 11:26:21][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b221838f-d000-41af-a8be-28a0d6376887
+
+[2022-02-09 11:26:24][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b992242d-b8d7-4c12-961b-4df4742d0d42
+
+[2022-02-09 11:26:27][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e18c71c0-9a25-4eba-a8cf-05d53cd2bbab
+
+[2022-02-09 11:26:47][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 7d7e9107-7724-44b1-a0f6-91a798d66344
+
+[2022-02-09 11:26:48][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 2e1e1255-4742-4446-97d9-e703950cfd9b
+
+[2022-02-09 11:26:49][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b01a1575-8082-4337-a817-eaf7b93ecf78
+
+[2022-02-09 11:26:50][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: bfbbcbe3-7e7d-4df1-991f-b5b732dcb1ce
+
+[2022-02-09 11:26:58][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 1e704ad7-6b98-4c23-8a13-ae51a41303ac
+
+[2022-02-09 11:27:00][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 828655c0-34bd-4f16-813e-96b05d54ef4f
+
+[2022-02-09 11:27:01][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 8dfadf67-2bfb-4f71-96c1-486dc241de65
+
+[2022-02-09 11:27:01][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 6475a37b-bf80-4e89-aa3d-b625a34dc455
+
+[2022-02-09 11:27:02][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: cf3311a9-d408-41aa-9ec6-10203bf30bde
+
+[2022-02-09 11:27:03][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b5107902-2266-451f-9dc4-48fc0241150a
+
+[2022-02-09 11:27:04][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 8617e939-1192-4a02-bdaf-564ae2c44aa0
+
+[2022-02-09 11:27:22][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 08fa61de-65a7-4a42-8bcb-fd127a25cbfe
+
+[2022-02-09 11:27:23][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 081a25cc-98cf-44ee-9247-393102d208f7
+
+[2022-02-09 11:27:24][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 4da95ecb-4cdb-4ff1-942b-b7b3ed5d253c
+
+[2022-02-09 11:27:25][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9a27b507-564b-412d-ab3d-cce06032a8b9
+
+[2022-02-09 11:27:26][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b8e1aac8-8890-4fdd-a802-2e3ddd50a07f
+
+[2022-02-09 11:27:26][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 7d4290f2-db63-436a-9b45-5abc09daae46
+
+[2022-02-09 11:27:27][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 1cbe206e-410c-481c-8244-e0a2a6717eef
+
+[2022-02-09 11:27:36][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e9286d1f-5145-410e-90e9-d6b25e365e7c
+
+[2022-02-09 11:27:39][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a4dd4625-4b06-487e-b9dc-23d729a3e798
+
+[2022-02-09 11:27:40][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e88cbbbd-3293-4c30-8ff5-c33020dde122
+
+[2022-02-09 11:27:41][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9c495b7a-dd98-435d-a75c-5461fba4754a
+
+[2022-02-09 11:27:42][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 26cccd95-da7b-410c-96fb-278476c1059c
+
+[2022-02-09 11:27:43][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: fffec752-ac77-494e-9816-f42b6c1d9a26
+
+[2022-02-09 11:28:01][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 54bade7a-4205-4ad3-b282-e3420ab42363
+
+[2022-02-09 11:28:02][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 364e3e89-c50e-4ab1-bd9d-8110eabb2500
+
+[2022-02-09 11:28:02][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 8a352ce1-bc74-4f62-bf71-2478ed7c2fc2
+
+[2022-02-09 11:28:04][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: bab7429d-a14e-4e8f-bbba-03952bcc0527
+
+[2022-02-09 11:28:05][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: bd06371a-9a42-4a3b-b501-a83435faf0f6
+
+[2022-02-09 11:28:06][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 72033bbc-3f48-409f-bd6c-9afd4f976167
+
+[2022-02-09 11:28:13][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 72da16cd-615b-4594-b4d5-72a875ca1539
+
+[2022-02-09 11:28:14][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a5910816-588b-4472-861d-f6ed7e3cca4a
+
+[2022-02-09 11:28:15][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: d180e4f5-2c54-4f47-ad89-371836bac2c6
+
+[2022-02-09 11:28:16][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a503bdf8-ceab-4ef8-9899-ebb7bf9449f9
+
+[2022-02-09 11:28:17][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: fae9e689-0331-4370-81ee-c3ff3795fb80
+
+[2022-02-09 11:28:18][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: d515f223-9f63-44cf-9869-376abbdb69cd
+
+[2022-02-09 11:28:19][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 15ddfdce-42e1-4e77-9dd6-7913c21dbe9b
+
+[2022-02-09 11:28:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 07de7114-b556-47e7-9a8f-96ac54c84772
+
+[2022-02-09 11:28:39][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b3c6ce1f-979a-4a53-b5af-18a7d86c2568
+
+[2022-02-09 11:28:39][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 203ab3bd-acee-46f3-9626-2ceb29d416da
+
+[2022-02-09 11:28:40][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e898adbf-2819-4dda-8629-d19da301c06b
+
+[2022-02-09 11:28:41][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e17bc689-ce6a-42c5-afe5-d7de09b111b9
+
+[2022-02-09 11:28:42][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 65a33c8c-1937-4f32-a166-0e7d2a98f79c
+
+[2022-02-09 11:28:43][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: f48fb976-ce68-4467-8d12-a06e09dc2307
+
+[2022-02-09 11:28:51][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 649e2c07-4868-4d1c-84b8-77994fc634ca
+
+[2022-02-09 11:28:52][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211021 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9a26f3cb-1b3f-4e72-893b-1ad0dbfbeb24
+
+[2022-02-09 11:28:53][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 5823b1d3-e844-494f-9ba8-915b0ca7a3cd
+
+[2022-02-09 11:28:53][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211023 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 53975173-0e58-4a19-bcb2-448750391d58
+
+[2022-02-09 11:28:54][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a57e86f6-a2c0-4ef0-a623-7ab458a0039d
+
+[2022-02-09 11:28:55][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211025 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c468ce2b-ce2f-428f-878d-207e851ece4f
+
+[2022-02-09 11:28:56][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 8420df5d-ab15-4a8b-be0e-3ce149a1682f
+
+[2022-02-09 11:29:13][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 81dd5037-a362-4503-b389-b7107d783bb4
+
+[2022-02-09 11:29:17][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e6ca4cd7-71a6-494f-bf2d-14cf8b03a9d8
+
+[2022-02-09 11:29:20][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: ba7b2e9b-28cf-4988-b446-12f4fc35ea27
+
+[2022-02-09 11:29:23][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: a86249ee-ca12-486a-8ad7-54f0381274c2
+
+[2022-02-09 11:29:31][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 2037e242-748f-491e-8e3b-1a25f05a1602
+
+[2022-02-09 11:29:34][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: f00573bb-4d81-4a04-9806-180167a76c17
+
+[2022-02-09 11:29:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b27364bb-0fb8-4035-839d-3e5b7993004a
+
+[2022-02-09 11:29:41][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: ec095be6-6df2-4c88-8e3f-fb615ced7c9f
+
+[2022-02-09 11:29:58][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 816c2506-3a05-40b9-b8c6-d08e0ab70c3c
+
+[2022-02-09 11:29:59][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 00dce285-a8e0-4bc9-9ae1-c5946e608d40
+
+[2022-02-09 11:30:00][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 8cd04332-4239-44f3-9644-f2f7a733f22c
+
+[2022-02-09 11:30:01][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c47d81a0-5428-48d9-adff-625060a4cfdb
+
+[2022-02-09 11:30:09][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 936577d9-be75-425b-ad41-a2a18dd0baed
+
+[2022-02-09 11:30:13][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: d51c9b96-f30a-41a2-8ae8-edf2c41ef9f0
+
+[2022-02-09 11:30:15][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 6ac4e0e4-2558-49f5-bdc7-30947e0c9d67
+
+[2022-02-09 11:30:19][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: adb2d2af-cee6-43d6-bf15-ea42c2efb5aa
+
+[2022-02-09 11:30:37][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 15caeb0a-59ba-46d0-a6c2-0d99eecff75b
+
+[2022-02-09 11:30:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: e6e13dcf-7c63-4eeb-be3a-48c086815695
+
+[2022-02-09 11:30:40][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c813b2a3-9593-465f-a087-1f4a0824807b
+
+[2022-02-09 11:30:41][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 43b3293c-0357-45c0-833b-446a02421a45
+
+[2022-02-09 11:30:48][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 2a09d5b6-a3ab-46b6-8510-6bd0f06b833c
+
+[2022-02-09 11:30:52][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 13647c0f-15d0-48ff-a365-f65ed9196100
+
+[2022-02-09 11:30:56][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c4827182-5e3b-49e6-bec7-a7d760796894
+
+[2022-02-09 11:30:59][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 40860b96-84f9-4c10-a1bd-ee3b6063e30e
+
+[2022-02-09 11:31:18][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: d4c5870f-4421-452e-8b0b-a8313aa4882e
+
+[2022-02-09 11:31:19][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 3a712b2b-4b0b-4925-a9fd-9af8dad16798
+
+[2022-02-09 11:31:20][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: de4c84ce-1255-4fb0-afe2-fa1eb4148c5f
+
+[2022-02-09 11:31:21][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: f9055b7f-409c-4f67-b8fc-800f7b5599e7
+
+[2022-02-09 11:31:29][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 46bfe776-c889-43fc-be3f-67b9a8cd7d0b
+
+[2022-02-09 11:31:32][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 639480c3-e2de-4891-8831-f1e647a1505f
+
+[2022-02-09 11:31:35][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 3d6544d4-5a71-4f61-a188-481827dfd15a
+
+[2022-02-09 11:31:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9fedc115-41e3-4eb5-b659-ea44dcd37074
+
+[2022-02-09 11:31:58][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 2c658636-2c6c-4cdb-9121-6b3b3079f0e5
+
+[2022-02-09 11:31:59][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b18d95ab-837b-4f1e-9e2d-754b3024c0b3
+
+[2022-02-09 11:32:00][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211024 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 3f90edbe-44c3-437a-bb7d-98a2b6920f76
+
+[2022-02-09 11:32:01][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211026 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 920aed49-dc1e-49fc-81dd-7bd1a232044b
+
+[2022-02-09 11:48:54][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 449149e8-407a-4e4f-a038-e3d276c18d18
+
+[2022-02-09 11:48:57][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: ff92af71-080b-4653-8df7-a389b9c5f873
+
+[2022-02-09 11:49:22][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 616954a4-6c67-4bf1-9144-f6081da69ae9
+
+[2022-02-09 11:49:24][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 65430d3d-029c-42e1-b3c2-3674a0cca144
+
+[2022-02-09 11:49:53][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: c4b07e05-5aa6-41d7-bd92-8443891cdafb
+
+[2022-02-09 11:49:55][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 9d01bd6a-a38b-4c37-bdb0-03108938703b
+
+[2022-02-09 11:50:21][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: acdd83f8-38ef-4def-967d-c0b2eaf7396e
+
+[2022-02-09 11:50:22][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211022 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 49c83a62-d164-4fe0-9d20-ed22aff9e5fe
+
+[2022-02-09 11:50:38][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: b316338d-7946-4685-a42a-7efae1b6b015
+
+[2022-02-09 11:51:03][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20211020 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 0ce3d2f0-9088-4c25-b7c0-fe496eb3f57b
+

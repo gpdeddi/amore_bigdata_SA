@@ -1,0 +1,73 @@
+[2022-01-24 14:30:39][ERROR][<module>] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\main.py, LINE 30 "raise Exception('Not Enough Arguments >> Require 2 arguments, but given 0.')"): Not Enough Arguments >> Require 2 arguments, but given 0.
+[2022-01-24 14:50:36][ERROR][selectQuery] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 23 "return results.to_dataframe()"): 400 tousflux-cloud:tousflux_datafeeding_bq.Q:_* does not match any table.
+
+Location: US
+Job ID: 1600ac55-fb67-4de8-b854-a995f32bb4a8
+
+[2022-01-24 14:50:36][ERROR][saveFile] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\CommonPackage\common.py, LINE 57 "df.to_csv(file_name, index=False)"): 'NoneType' object has no attribute 'to_csv'
+[2022-01-24 14:50:36][ERROR][<module>] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\main.py, LINE 84 "data = pd.read_csv(save_file_name)"): Invalid file path or buffer object type: <class 'NoneType'>
+[2022-01-24 14:53:52][ERROR][selectQuery] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 23 "return results.to_dataframe()"): 400 tousflux-cloud:tousflux_datafeeding_bq.Q:_* does not match any table.
+
+Location: US
+Job ID: ba60b6a2-7299-4898-99e5-67a11db791b9
+
+[2022-01-24 14:53:52][ERROR][saveFile] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\CommonPackage\common.py, LINE 57 "df.to_csv(file_name, index=False)"): 'NoneType' object has no attribute 'to_csv'
+[2022-01-24 14:53:52][ERROR][<module>] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\main.py, LINE 84 "data = pd.read_csv(save_file_name)"): Invalid file path or buffer object type: <class 'NoneType'>
+[2022-01-24 14:56:41][ERROR][selectQuery] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 23 "return results.to_dataframe()"): 400 tousflux-cloud:tousflux_datafeeding_bq.Q:_* does not match any table.
+
+Location: US
+Job ID: 6e1c57d6-f4a3-459b-9825-11973510491c
+
+[2022-01-24 14:56:41][ERROR][saveFile] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\CommonPackage\common.py, LINE 57 "df.to_csv(file_name, index=False)"): 'NoneType' object has no attribute 'to_csv'
+[2022-01-24 14:56:41][ERROR][<module>] >> EXCEPTION IN (D:\bigquery_extract-main\bigquery_extract-main\main.py, LINE 84 "data = pd.read_csv(save_file_name)"): Invalid file path or buffer object type: <class 'NoneType'>
+[2022-01-24 15:00:39][ERROR][<module>] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\main.py, LINE 88 "bigQueryData.getQueryData()"): getQueryData() missing 1 required positional argument: 'query'
+[2022-01-24 15:31:52][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 24 "result = query_job.result()"): 404 Not found: Table ap-bq-mart:AP_Bigdata_Dashboard.TOTAL_SAData_20210101 was not found in location asia-northeast3
+
+Location: asia-northeast3
+Job ID: 7555af63-6258-44db-9c13-fd4904ef64b0
+
+[2022-01-25 16:35:22][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210125 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 3f55a89a-c45b-4368-a573-c70ff54fdc0a
+
+[2022-01-25 16:35:24][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210126 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 734afadf-5174-4dbd-8841-1cabea3bd774
+
+[2022-01-25 16:35:26][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210127 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 7aa7a8fe-5d2e-4e6e-917b-9bd5948df6f6
+
+[2022-01-25 16:41:09][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210125 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 04c57378-e75f-485c-a6e4-115b4bdedfb9
+
+[2022-01-25 16:41:11][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210126 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: d698c94b-273f-4f52-9694-81f2b84b36a1
+
+[2022-01-25 16:41:13][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210127 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 609b0089-ce43-490a-bdf0-8cf788b1140a
+
+[2022-01-25 16:41:15][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 UPDATE or DELETE statement over table ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_20210128 would affect rows in the streaming buffer, which is not supported
+
+Location: asia-northeast3
+Job ID: 46317901-1773-4018-bc31-1c9f6a08b31c
+
+[2022-01-26 22:34:11][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Unclosed string literal at [3:60]
+
+Location: US
+Job ID: 954623f5-7418-4469-afaa-a69550157b5c
+
+[2022-01-26 22:34:19][ERROR][updateQuery] >> EXCEPTION IN (d:\bigquery_extract-main\bigquery_extract-main\DataAccessPackage\utilityBigquery.py, LINE 26 "query_job.result()"): 400 Syntax error: Unclosed string literal at [3:57]
+
+Location: US
+Job ID: 8d7ac783-39a8-4028-9edd-048320cc5bf4
+
