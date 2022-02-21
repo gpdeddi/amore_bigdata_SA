@@ -12,8 +12,8 @@ if __name__ == '__main__':
     try:
         print('Running...')
         
-        bigQueryData.updateBrandName()
-        # bigQueryData.updateKeywordType()
+        # bigQueryData.updateBrandName()
+        bigQueryData.updateKeywordDate()
         # bigQueryData.insertKeyword()
         # bigQueryData.deleteCompaign()
         

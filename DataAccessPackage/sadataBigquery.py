@@ -6,6 +6,7 @@ from google.cloud import bigquery
 from google.cloud.exceptions import NotFound
 from CommonPackage.logger import *
 from CommonPackage.common import common, loggerCommon
+import numpy as np
 
 class readCsvFile:
     def readCoupang():
@@ -59,31 +60,33 @@ class bigQueryData:
         pass
     
     def updateBrandName() :
+        # Brand_Name, Product_Name Update
         result = None
         try:
             dac = bigQueryDac()
             
-            tableName = 'ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_'
-            tableDate = datetime.datetime(2021,1,1)
-            sitename = '옥션'
+            tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
+            # tableDate = datetime.datetime(2022,1,1)
+            today = datetime.datetime.now()
+            tableDate = today - datetime.timedelta(days=7) # 일주일씩 업데이트 - 쿼리예약
             
-            # 일별 테이블 
-            while tableDate < datetime.datetime(2022,1,1) :
+            # 일별 테이블
+            # while tableDate < datetime.datetime(2022,2,7) :
+            while tableDate < today :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 
                 query = f'''
                         UPDATE `{tableId}` s
                         SET s.Brand_Name = (
                             select m.Brand_Name
-                            from `ap-bq-mart.AP_Bigdata_Dashboard.BrandNameMapping` m
+                            from `ap-bq-mart.AP_Bigdata_Dashboard_US.BrandNameMapping` m
                             where m.Product_Id = s.Product_Id
-                        ), 
-                        s.Product_Name = (
+                        ), s.Product_Name = (
                             select m.Product_Name
-                            from `ap-bq-mart.AP_Bigdata_Dashboard.BrandNameMapping` m
+                            from `ap-bq-mart.AP_Bigdata_Dashboard_US.BrandNameMapping` m
                             where m.Product_Id = s.Product_Id
                         )
-                        WHERE s.Site = '{sitename}'
+                        where 1=1
                 '''
                 dac.updateQuery(query, tableId)
                 tableDate = tableDate + datetime.timedelta(days=1)
@@ -95,43 +98,90 @@ class bigQueryData:
 
         return result
     
-    
     # 키워드 타입 분류 업데이트
+    def updateKeywordDate():
+        result = None
+        try:
+            dac = bigQueryDac()
+            tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
+            tableDate = datetime.datetime(2022,1,1)
+            
+            while tableDate < datetime.datetime(2022,2,9) :
+                tableId = tableName + tableDate.strftime('%Y%m%d')
+                query = f'''
+                        SELECT DISTINCT(Keyword)
+                        from `{tableId}`
+                        where Keyword in (
+                            select KeyWord
+                            from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping`
+                        ) and K_Type_D1 is null
+                        order by Keyword desc
+                    '''
+                keywordList = dac.selectQuery(query)
+                for ky in keywordList.itertuples():
+                    if ky[1] == '':
+                        continue
+                    query = f'''
+                    update `{tableId}` s
+                    set K_Type_D1 = Depth_1, K_Type_D2 = Depth_2, K_Type_D3 = Depth_3
+                    from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
+                    where k.KeyWord = '{ky[1]}' and s.Keyword = '{ky[1]}'
+                    '''
+                    result_query = dac.updateQuery(query, tableId)
+            
+        except Exception as e:
+            print(e)
+    
+    # 쿼리문 다시하기
     def updateKeywordType() :
         try:
-            data = pd.read_excel("D:/2021230_키워드 분류_F_수정.xlsx", index_col=None)
+            data = pd.read_excel("D:/키워드 분류.xlsx", index_col=None)
             
             dac = bigQueryDac()
-            tableName = 'ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_'
+            tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
             
             for row in data.itertuples():
                 query = f'''
-                        SELECT Date FROM `ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_*`
-                        Where Keyword = '{row[1]}'
+                        SELECT Date FROM `ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_*`
+                        Where Keyword = '{row[1]}' and K_Type_D1 is null
                         group by Date
                         order by Date
                 '''
                 resultDate = dac.selectQuery(query)
                 
                 if len(resultDate) < 1:
+                    print(row[1])
                     continue
                 
                 # 쿼리문 수정해야 함
                 for dd in resultDate.itertuples():
                     tableDate = dd[1].strftime("%Y%m%d")
-                    tableId = "ap-bq-mart.AP_Bigdata_Dashboard.SAData_Total_" + tableDate
-                    query = f'''
-                        update `{tableId}` s
-                        set s.K_Type_D1 = kd1, s.K_Type_D2 = kd2, s.K_Type_D3 = kd3
-                        from (
-                            select k.Keyword as ky, s.Product_Id as pid, k.Depth_1 as kd1, k.Depth_2 as kd2, k.Depth_3 as kd3
-                            from `{tableId}` s
-                            inner join `ap-bq-mart.AP_Bigdata_Dashboard.KeywordMapping` k
-                            on s.Keyword = k.KeyWord
-                            where s.Keyword = '{row[1]}'
-                        )as kyTable
-                        where s.Keyword = kyTable.ky and s.Product_Id = kyTable.pid
-                        '''
+                    tableId = "ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_" + tableDate
+                    
+                    if pd.isna(row[3]) :
+                        query = f'''
+                                update `{tableId}` s
+                                set K_Type_D1 = '{row[2]}'
+                                where Keyword = '{row[1]}' 
+                            '''
+                    elif pd.isna(row[4]) :
+                        query = f'''
+                                update `{tableId}` s
+                                set K_Type_D1 = '{row[2]}', K_Type_D2 = '{row[3]}'
+                                where Keyword = '{row[1]}' 
+                            '''
+                    else:
+                        query = f'''
+                                update `{tableId}` s
+                                set K_Type_D1 = '{row[2]}', K_Type_D2 = '{row[3]}', K_Type_D3 = '{row[4]}'
+                                where Keyword = '{row[1]}' 
+                            '''
+                    
+                    # query = f'''
+                    #             update `{tableId}` s
+                    #             set K_Type_D1 = '{row[2]}'
+                    #             where Keyword = '{row[1]}' 
+                    #         '''
                     result_query = dac.updateQuery(query, tableId)
                     
             result = dac.selectQuery(query)
@@ -139,8 +189,8 @@ class bigQueryData:
         except Exception as e:
             print(e)
     
-    # 불필요한 쿠팡 데이터 삭제 요청
     def  deleteCompaign():
+        # 불필요한 쿠팡 데이터 삭제 요청
         try:
             data = pd.read_excel("D:/BE2_2022/쿠팡삭제.xlsx", index_col=None, sheet_name="삭제 대상")
             
@@ -167,7 +217,7 @@ class bigQueryData:
                             WHERE Site = '쿠팡' AND Campaign = '{row[1]}'
                         '''
                     result_query = dac.updateQuery(query, tableId)
-                print(row[1] + " end")  # 삭제 끝
+                print(row[1] + " end")  # 끝
             
         except Exception as e:
             print(e)
