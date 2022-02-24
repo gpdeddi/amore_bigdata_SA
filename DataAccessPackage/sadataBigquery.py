@@ -104,9 +104,9 @@ class bigQueryData:
         try:
             dac = bigQueryDac()
             tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
-            tableDate = datetime.datetime(2022,1,1)
+            tableDate = datetime.datetime(2021,3,9)
             
-            while tableDate < datetime.datetime(2022,2,9) :
+            while tableDate < datetime.datetime(2021,6,1) :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 query = f'''
                         SELECT DISTINCT(Keyword)
@@ -115,19 +115,34 @@ class bigQueryData:
                             select KeyWord
                             from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping`
                         ) and K_Type_D1 is null
-                        order by Keyword desc
+                        order by Keyword
                     '''
                 keywordList = dac.selectQuery(query)
+                if keywordList.size < 1:  
+                     # 업데이트 완료된 테이블
+                    print('{0} : {1}'.format(tableId, keywordList.size))
+                    tableDate = tableDate + datetime.timedelta(days=1)
+                    continue
+                
                 for ky in keywordList.itertuples():
-                    if ky[1] == '':
-                        continue
-                    query = f'''
-                    update `{tableId}` s
-                    set K_Type_D1 = Depth_1, K_Type_D2 = Depth_2, K_Type_D3 = Depth_3
-                    from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
-                    where k.KeyWord = '{ky[1]}' and s.Keyword = '{ky[1]}'
-                    '''
-                    result_query = dac.updateQuery(query, tableId)
+                    try:
+                        if ky[1] == '':
+                            continue
+                        query = f'''
+                        update `{tableId}` s
+                        set K_Type_D1 = d1, K_Type_D2 = d2, K_Type_D3 = d3
+                        from (
+                            select KeyWord, max(Depth_1) d1, max(Depth_2) d2, max(Depth_3) d3
+                            from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
+                            group by KeyWord
+                        ) k
+                        where k.KeyWord = '{ky[1]}' and s.Keyword = '{ky[1]}'
+                        '''
+                        result_query = dac.updateQuery(query, tableId)
+                    except Exception as e:
+                        print(e)
+                
+                tableDate = tableDate + datetime.timedelta(days=1)
             
         except Exception as e:
             print(e)
