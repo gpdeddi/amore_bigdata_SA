@@ -67,12 +67,9 @@ class bigQueryData:
             
             tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
             tableDate = datetime.datetime(2022,2,20)
-            # today = datetime.datetime.now()
-            # tableDate = today - datetime.timedelta(days=7) # 일주일씩 업데이트 - 쿼리예약
             
             # 일별 테이블
             while tableDate < datetime.datetime(2022,3,1) :
-            # while tableDate < today :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 
                 query = f'''
@@ -80,13 +77,13 @@ class bigQueryData:
                         SET s.Brand_Name = (
                             select m.Brand_Name
                             from `ap-bq-mart.AP_Bigdata_Dashboard_US.BrandNameMapping` m
-                            where m.Product_Id = s.Product_Id
+                            where m.Product_Id = s.Product_Id and m.Site = s.Site
                         ), s.Product_Name = (
                             select m.Product_Name
                             from `ap-bq-mart.AP_Bigdata_Dashboard_US.BrandNameMapping` m
-                            where m.Product_Id = s.Product_Id
+                            where m.Product_Id = s.Product_Id and m.Site = s.Site
                         )
-                        where 1=1
+                        where s.Brand_Name is null
                 '''
                 dac.updateQuery(query, tableId)
                 tableDate = tableDate + datetime.timedelta(days=1)
@@ -104,9 +101,9 @@ class bigQueryData:
         try:
             dac = bigQueryDac()
             tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
-            tableDate = datetime.datetime(2022,2,13)
+            tableDate = datetime.datetime(2022,1,1)
             
-            while tableDate < datetime.datetime(2022,3,1) :
+            while tableDate < datetime.datetime(2022,2,1) :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 query = f'''
                         update `{tableId}` s
@@ -170,35 +167,10 @@ class bigQueryData:
                                 set K_Type_D1 = '{row[2]}', K_Type_D2 = '{row[3]}', K_Type_D3 = '{row[4]}'
                                 where Keyword = '{row[1]}' 
                             '''
-                    
-                    # query = f'''
-                    #             update `{tableId}` s
-                    #             set K_Type_D1 = '{row[2]}'
-                    #             where Keyword = '{row[1]}' 
-                    #         '''
                     result_query = dac.updateQuery(query, tableId)
                     
             result = dac.selectQuery(query)
             
-        except Exception as e:
-            print(e)
-    
-    def deletecoupangdata():
-        try:
-            dac = bigQueryDac()
-            tableName = "ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_"
-            tableDate = datetime.datetime(2022,1,2)
-            while tableDate < datetime.datetime(2022,2,26) :
-                tableId = tableName + tableDate.strftime('%Y%m%d')
-                query = f'''
-                    delete `ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_{tableDate.strftime('%Y%m%d')}`
-                    where Site = '쿠팡'
-
-                '''
-                result_query = dac.updateQuery(query, tableId)
-                print(result_query)
-                tableDate = tableDate + datetime.timedelta(days=1)
-                
         except Exception as e:
             print(e)
     
@@ -236,7 +208,6 @@ class bigQueryData:
             print(e)
 
     def insertKeyword():
-        # excel file bigquery insert
         try:
             data = pd.read_excel("D:/보정확인_11번가 Product Info DB_F_골든플래닛.xlsx", index_col=None)
             
