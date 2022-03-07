@@ -66,13 +66,13 @@ class bigQueryData:
             dac = bigQueryDac()
             
             tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
-            # tableDate = datetime.datetime(2022,1,1)
-            today = datetime.datetime.now()
-            tableDate = today - datetime.timedelta(days=7) # 일주일씩 업데이트 - 쿼리예약
+            tableDate = datetime.datetime(2022,2,20)
+            # today = datetime.datetime.now()
+            # tableDate = today - datetime.timedelta(days=7) # 일주일씩 업데이트 - 쿼리예약
             
             # 일별 테이블
-            # while tableDate < datetime.datetime(2022,2,7) :
-            while tableDate < today :
+            while tableDate < datetime.datetime(2022,3,1) :
+            # while tableDate < today :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 
                 query = f'''
@@ -104,31 +104,11 @@ class bigQueryData:
         try:
             dac = bigQueryDac()
             tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
-            tableDate = datetime.datetime(2021,3,9)
+            tableDate = datetime.datetime(2022,2,13)
             
-            while tableDate < datetime.datetime(2021,6,1) :
+            while tableDate < datetime.datetime(2022,3,1) :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 query = f'''
-                        SELECT DISTINCT(Keyword)
-                        from `{tableId}`
-                        where Keyword in (
-                            select KeyWord
-                            from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping`
-                        ) and K_Type_D1 is null
-                        order by Keyword
-                    '''
-                keywordList = dac.selectQuery(query)
-                if keywordList.size < 1:  
-                     # 업데이트 완료된 테이블
-                    print('{0} : {1}'.format(tableId, keywordList.size))
-                    tableDate = tableDate + datetime.timedelta(days=1)
-                    continue
-                
-                for ky in keywordList.itertuples():
-                    try:
-                        if ky[1] == '':
-                            continue
-                        query = f'''
                         update `{tableId}` s
                         set K_Type_D1 = d1, K_Type_D2 = d2, K_Type_D3 = d3
                         from (
@@ -136,11 +116,10 @@ class bigQueryData:
                             from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
                             group by KeyWord
                         ) k
-                        where k.KeyWord = '{ky[1]}' and s.Keyword = '{ky[1]}'
-                        '''
-                        result_query = dac.updateQuery(query, tableId)
-                    except Exception as e:
-                        print(e)
+                        where s.K_Type_D1 is null and s.Keyword = k.Keyword
+                    '''
+                result_query = dac.updateQuery(query, tableId)    
+                print(result_query)
                 
                 tableDate = tableDate + datetime.timedelta(days=1)
             
@@ -201,6 +180,25 @@ class bigQueryData:
                     
             result = dac.selectQuery(query)
             
+        except Exception as e:
+            print(e)
+    
+    def deletecoupangdata():
+        try:
+            dac = bigQueryDac()
+            tableName = "ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_"
+            tableDate = datetime.datetime(2022,1,2)
+            while tableDate < datetime.datetime(2022,2,26) :
+                tableId = tableName + tableDate.strftime('%Y%m%d')
+                query = f'''
+                    delete `ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_{tableDate.strftime('%Y%m%d')}`
+                    where Site = '쿠팡'
+
+                '''
+                result_query = dac.updateQuery(query, tableId)
+                print(result_query)
+                tableDate = tableDate + datetime.timedelta(days=1)
+                
         except Exception as e:
             print(e)
     

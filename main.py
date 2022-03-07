@@ -15,7 +15,7 @@ if __name__ == '__main__':
         # bigQueryData.updateBrandName()
         bigQueryData.updateKeywordDate()
         # bigQueryData.insertKeyword()
-        # bigQueryData.deleteCompaign()
+        # bigQueryData.deletecoupangdata()
         
         print('Stopped.')
     
