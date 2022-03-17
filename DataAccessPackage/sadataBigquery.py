@@ -36,7 +36,6 @@ class bigQueryDac:
             
             query_job.result()
             # print(f"{tableId} - modified {query_job.num_dml_affected_rows} rows.")
-            print(query)
             result = query_job.num_dml_affected_rows
             
         except Exception as e:
@@ -101,79 +100,38 @@ class bigQueryData:
         try:
             dac = bigQueryDac()
             tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
-            tableDate = datetime.datetime(2022,1,1)
+            tableDate = datetime.datetime(2021,2,1)
             
-            while tableDate < datetime.datetime(2022,2,1) :
+            while tableDate < datetime.datetime(2022,3,1) :
                 tableId = tableName + tableDate.strftime('%Y%m%d')
                 query = f'''
-                        update `{tableId}` s
-                        set K_Type_D1 = d1, K_Type_D2 = d2, K_Type_D3 = d3
-                        from (
-                            select KeyWord, max(Depth_1) d1, max(Depth_2) d2, max(Depth_3) d3
-                            from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
-                            group by KeyWord
-                        ) k
-                        where s.K_Type_D1 is null and s.Keyword = k.Keyword
-                    '''
+                    update `{tableId}` s
+                    set K_Type_D1 = d1, K_Type_D2 = d2, K_Type_D3 = d3 
+                    from (
+                        select KeyWord, max(Depth_1) d1, max(Depth_2) d2, max(Depth_3) d3
+                        from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
+                        group by KeyWord
+                    ) k
+                    where s.Keyword = k.Keyword and s.K_Type_D1 != k.d1
+                '''
+                # query = f'''
+                #         update `{tableId}` s
+                #         set K_Type_D1 = d1, K_Type_D2 = d2, K_Type_D3 = d3
+                #         from (
+                #             select KeyWord, max(Depth_1) d1, max(Depth_2) d2, max(Depth_3) d3
+                #             from `ap-bq-mart.AP_Bigdata_Dashboard_US.KeywordMapping` k
+                #             group by KeyWord
+                #         ) k
+                #         where s.K_Type_D1 is null and s.Keyword = k.Keyword
+                #     '''
                 result_query = dac.updateQuery(query, tableId)    
-                print(result_query)
+                print(tableId, " - update : ", result_query)
                 
                 tableDate = tableDate + datetime.timedelta(days=1)
             
         except Exception as e:
             print(e)
-    
-    # 쿼리문 다시하기
-    def updateKeywordType() :
-        try:
-            data = pd.read_excel("D:/키워드 분류.xlsx", index_col=None)
-            
-            dac = bigQueryDac()
-            tableName = 'ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_'
-            
-            for row in data.itertuples():
-                query = f'''
-                        SELECT Date FROM `ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_*`
-                        Where Keyword = '{row[1]}' and K_Type_D1 is null
-                        group by Date
-                        order by Date
-                '''
-                resultDate = dac.selectQuery(query)
-                
-                if len(resultDate) < 1:
-                    print(row[1])
-                    continue
-                
-                # 쿼리문 수정해야 함
-                for dd in resultDate.itertuples():
-                    tableDate = dd[1].strftime("%Y%m%d")
-                    tableId = "ap-bq-mart.AP_Bigdata_Dashboard_US.SAData_Total_" + tableDate
-                    
-                    if pd.isna(row[3]) :
-                        query = f'''
-                                update `{tableId}` s
-                                set K_Type_D1 = '{row[2]}'
-                                where Keyword = '{row[1]}' 
-                            '''
-                    elif pd.isna(row[4]) :
-                        query = f'''
-                                update `{tableId}` s
-                                set K_Type_D1 = '{row[2]}', K_Type_D2 = '{row[3]}'
-                                where Keyword = '{row[1]}' 
-                            '''
-                    else:
-                        query = f'''
-                                update `{tableId}` s
-                                set K_Type_D1 = '{row[2]}', K_Type_D2 = '{row[3]}', K_Type_D3 = '{row[4]}'
-                                where Keyword = '{row[1]}' 
-                            '''
-                    result_query = dac.updateQuery(query, tableId)
-                    
-            result = dac.selectQuery(query)
-            
-        except Exception as e:
-            print(e)
-    
+
     def  deleteCompaign():
         # 불필요한 쿠팡 데이터 삭제 요청
         try:
