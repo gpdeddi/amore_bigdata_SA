@@ -13,9 +13,12 @@ if __name__ == '__main__':
         print('Running...')
         
         # bigQueryData.updateBrandName()
-        bigQueryData.updateKeywordDate()
-        # bigQueryData.insertKeyword()
-        # bigQueryData.deletecoupangdata()
+        # bigQueryData.updateKeywordDate()
+        
+        # bigQueryData.deleteData()
+        
+        # 일별 데이터로 파싱
+        readCsvFile.readXlsx()
         
         print('Stopped.')
     
